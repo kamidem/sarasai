@@ -32,13 +32,28 @@ public class MyList {
                 }
             }
             this.list = newList;
-        } 
+        } else {
+            try {
+                throw new Klaida("Indexas yra netinkamas skaicius: " + index);
+            }
+            catch(Klaida k){
+                System.out.println("*** Pagavau klaida: " + k.getMessage());
+//                k.printStackTrace();
+            }
+        }
     }
 
     public Object get(int index) {
         if(index >= 0 && index < list.length){
             return this.list[index];
         } else {
+            try {
+                throw new Klaida("Indexas yra netinkamas skaicius: " + index);
+            }
+            catch(Klaida k){
+                System.out.println("*** Pagavau klaida: " + k.getMessage());
+//                k.printStackTrace();
+            }
             return null;
         }
     }
@@ -66,6 +81,14 @@ public class MyList {
             }
             
             this.list = newList;
+        } else {
+            try {
+                throw new Klaida("Indexas yra netinkamas skaicius: " + index);
+            }
+            catch(Klaida k){
+                System.out.println("*** Pagavau klaida: " + k.getMessage());
+//                k.printStackTrace();
+            }
         }
     }
 

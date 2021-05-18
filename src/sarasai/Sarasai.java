@@ -1,5 +1,7 @@
 package sarasai;
 
+import sarasai.newpackage.MyLinkedList;
+
 public class Sarasai {
 
     /**
@@ -7,7 +9,90 @@ public class Sarasai {
      */
     public static void main(String[] args) {
         
-        MyList ml = new MyList();
+        
+//        MyList ml = new MyList();
+//        System.out.println(ml.toString());
+//        // {}
+//        System.out.println(ml.size());
+//        // 0
+//        
+//        ml.add("pirmas");
+//        System.out.println(ml.toString());
+//        // {pirmas}
+//        System.out.println(ml.size());
+//        // 1
+//
+//        ml.add("antras");
+//        System.out.println(ml.toString());
+//        // {pirmas, antras}
+//        System.out.println(ml.size());
+//        // 2
+//
+//        ml.add("trecias");
+//        System.out.println(ml.toString());
+//        // {pirmas, antras, trecias}
+//        System.out.println(ml.size());
+//        // 3
+//        
+//        System.out.println(ml.get(0));
+//        // pirmas
+//        System.out.println(ml.get(2));
+//        // trecias
+//        System.out.println(ml.get(-3));
+//        // null
+//        System.out.println(ml.get(3));
+//        // null
+//        
+//        ml.set(1, "kitas antras");
+//        System.out.println(ml.toString());
+//        // {pirmas, kitas antras, trecias}
+//        System.out.println(ml.size());
+//        // 3
+//        System.out.println(ml.get(1));
+//        // kitas antras
+//        
+//        ml.remove(1);
+//        System.out.println(ml.toString());
+//        // {pirmas, trecias}
+//        System.out.println(ml.size());
+//        // 2
+//        System.out.println(ml.get(1));
+//        // trecias
+//        
+//        ml.insert(0, "nulis");
+//        System.out.println(ml.toString());
+//        // {nulis, pirmas, trecias}
+//        System.out.println(ml.size());
+//        // 3
+//        System.out.println(ml.get(0));
+//        // nulis
+//
+//        ml.insert(2, "pries trecia");
+//        System.out.println(ml.toString());
+//        // {nulis, pirmas, pries trecia, trecias}
+//        System.out.println(ml.size());
+//        // 4
+//        System.out.println(ml.get(2));
+//        // pries trecia
+
+
+//            MyLinkedList l = new MyLinkedList();
+//            System.out.println(l);
+//            Object p = new Object();
+//            
+//            Object d = new Object();
+//            
+//            
+//            l.add(p);
+//            System.out.println(l);
+//            l.add(d);
+//            System.out.println(l);
+//            
+//            l.remove(0);
+//            System.out.println("naujas: " + l);
+            
+            
+        MyLinekdList ml = new MyLinekdList();
         System.out.println(ml.toString());
         // {}
         System.out.println(ml.size());
@@ -35,9 +120,9 @@ public class Sarasai {
         // pirmas
         System.out.println(ml.get(2));
         // trecias
-        System.out.println(ml.get(-3));
+//        System.out.println(ml.get(-3));
         // null
-        System.out.println(ml.get(3));
+//        System.out.println(ml.get(3));
         // null
         
         ml.set(1, "kitas antras");
@@ -71,6 +156,10 @@ public class Sarasai {
         // 4
         System.out.println(ml.get(2));
         // pries trecia
+            
+//            System.out.println("length: " + l.length);
+
+   
     }
     
 }
